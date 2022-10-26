@@ -1,4 +1,4 @@
-package com.cydeo.step_definitions;
+package com.cydeo.pages;
 
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
