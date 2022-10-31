@@ -1,4 +1,4 @@
-package com.cydeo.runners;
+package com.cloud.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

@@ -1,21 +1,23 @@
-package com.cydeo.runners;
+package com.cloud.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions( //What is class willbe runnig in this class? Give them in key-value format
+@CucumberOptions( //What is class will be runnig in this class? Give them in key-value format
         plugin = { //tells us what kind of file to create where in what name in what extension
                 //"pretty",
                 "html:target/cucumber-reports.html",
+                "json:target/cucumber.json",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
         features = "src/test/resources/features",
-        glue = "com/cydeo/step_definitions",
+        glue = "com/cloud/step_definitions",
         dryRun = false,
-        tags = "smoke"  //@scenarioOutline
+        tags = "@CLOUD-1358"  //@scenarioOutline
+
 )
  public  class CukesRunner {
 }
